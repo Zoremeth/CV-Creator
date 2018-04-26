@@ -1,8 +1,10 @@
 :host {
+    display: flex;
+    flex-direction: column;
     background-color: #f7f7f7;
     color: #382c2c;
-    width: 100%;
-}
+    flex: 4;
+  }
 
 p { 
     padding-left: 10px;

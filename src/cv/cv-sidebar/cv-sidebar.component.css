@@ -1,19 +1,25 @@
 :host {
+    display: flex;
+    flex-direction: column;
     background-color: #efefe5;
     color: #382c2c;
-    width: 30vw;
-    height: 100vh;
-}
-p, h1, h2, h3 {
+    flex: 1.5;
     padding-left: 10px;
 }
- 
-img {
-    height: auto;
-    width: 28vw;
+
+.profile-picture-box {
     margin: 10px;
+    padding-left: 0;
+    margin-left: 0;
 }
 
+.profile-picture {
+    width: 100%;
+}
+
+.introduction {
+    text-transform: uppercase;
+}
 .sidebar-items {
     margin-top: 5px;
     margin-bottom: 5px;
