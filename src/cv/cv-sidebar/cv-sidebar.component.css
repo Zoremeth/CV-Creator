@@ -1,0 +1,20 @@
+:host {
+    background-color: #efefe5;
+    color: #382c2c;
+    width: 30vw;
+    height: 100vh;
+}
+p, h1, h2, h3 {
+    padding-left: 10px;
+}
+ 
+img {
+    height: auto;
+    width: 28vw;
+    margin: 10px;
+}
+
+.sidebar-items {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

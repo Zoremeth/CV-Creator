@@ -1,0 +1,18 @@
+:host {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 960px) 
+{
+    .cv-page {
+        width: 100%;
+    }
+}
+
+@media (min-width: 961px ) {
+    .cv-page {
+        justify-content: center;
+        width: 80%;
+    }   
+}
