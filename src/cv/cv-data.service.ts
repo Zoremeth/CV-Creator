@@ -27,6 +27,7 @@ export class CvDataService {
     { name: 'English', progress: 4 },
     { name: 'Chinese', progress: 2 },
     { name: 'Japanese', progress: 5 },
+    { name: 'Spanish', progress: 8 }
   ];
 
   getJobs(): Observable<Jobs[]> {

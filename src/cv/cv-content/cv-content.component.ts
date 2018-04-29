@@ -29,10 +29,6 @@ export class CvContentComponent implements OnInit {
     this.dataService.getLanguages().subscribe(data => this.languages = data, error => console.log(error));
   }
 
-  isSpecial(number: number, progress: number): boolean {
-    return (number < progress);
-  }
-
   ngOnInit() {
     this.setJobs();
     this.setSchools();

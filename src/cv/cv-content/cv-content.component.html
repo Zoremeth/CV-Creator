@@ -47,7 +47,7 @@
         <div *ngFor="let language of languages;" class="language-container">
             <p>{{language.name}}</p>
             <div class="progress-bar">
-                <div *ngFor="let number of numbers" class="progress-box" [class.progress-box-active]="isSpecial(number, language.progress)"></div>
+                <div *ngFor="let number of numbers" class="progress-box" [class.progress-box-active]="number < language.progress"></div>
             </div>
         </div>
     </div>
