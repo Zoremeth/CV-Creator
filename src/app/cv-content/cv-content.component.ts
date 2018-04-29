@@ -9,14 +9,10 @@ import { Jobs, Schools, Languages } from '../contact-info';
 })
 export class CvContentComponent implements OnInit {
 
-  numbers: Number[] = [];
   jobs?: Jobs[];
   schools?: Schools[];
-  languages?: Languages[];
 
-  constructor(private dataService: CvDataService) {
-    this.numbers = Array(10).fill(0).map((x, i) => i);
-  }
+  constructor(private dataService: CvDataService) { }
   setJobs(): void {
     this.dataService.getJobs().subscribe(data => this.jobs = data, error => console.log(error));
   }
@@ -25,14 +21,10 @@ export class CvContentComponent implements OnInit {
     this.dataService.getSchools().subscribe(data => this.schools = data, error => console.log(error));
   }
 
-  setLanguages(): void {
-    this.dataService.getLanguages().subscribe(data => this.languages = data, error => console.log(error));
-  }
 
   ngOnInit() {
     this.setJobs();
     this.setSchools();
-    this.setLanguages();
   }
 }
 

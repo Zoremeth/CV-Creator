@@ -1,0 +1,9 @@
+.sidebar-items {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.sidebar-items-icon {
+    display: flex;
+}

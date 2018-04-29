@@ -8,6 +8,8 @@ import { CvSidebarComponent } from './cv-sidebar/cv-sidebar.component';
 import { CvContentComponent } from './cv-content/cv-content.component';
 import { CvDataService } from './cv-data.service';
 import { CvPersonalInfoComponent } from './cv-personal-info/cv.personal-info.component';
+import { CvLanguageProgressbarComponent } from './cv-language-progressbar/cv-language-progressbar.component';
+import { CvHeadersComponent } from './cv-headers/cv-headers.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { CvPersonalInfoComponent } from './cv-personal-info/cv.personal-info.com
     CvPageComponent,
     CvSidebarComponent,
     CvContentComponent,
-    CvPersonalInfoComponent
+    CvPersonalInfoComponent,
+    CvLanguageProgressbarComponent,
+    CvHeadersComponent,
   ],
   imports: [
     BrowserModule

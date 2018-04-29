@@ -1,0 +1,39 @@
+<div>
+  <hr>
+  <h2>EDUCATION</h2>
+  <hr>
+  <div *ngFor="let school of schools;" class="job-container">
+    <p class="job-timeframe" *ngIf="school.name">
+      {{school.timeframe}}
+    </p>
+    <p *ngIf="school.name">
+      {{school.name}}
+      <br> {{school.level}}
+    </p>
+  </div>
+</div>
+
+<br>
+
+<div>
+  <hr>
+  <h2>EXPERIENCE</h2>
+  <hr>
+  <div *ngFor="let job of jobs;" class="job-container">
+    <p class="job-timeframe" *ngIf="job.name">
+      {{job.timeframe}}
+    </p>
+    <p *ngIf="job.name">
+      {{job.name}}
+      <br> {{job.functions}}
+    </p>
+  </div>
+</div>
+
+<br>
+
+<div>
+  <hr>
+  <h2>LANGUAGE</h2>
+  <hr>
+</div>
