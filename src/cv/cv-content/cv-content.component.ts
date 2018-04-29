@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CvDataService } from '../cv-data.service';
-import { Jobs } from '../contact-info';
+import { Jobs, Schools, Languages } from '../contact-info';
 
 @Component({
   selector: ' cv-content',
@@ -9,15 +9,36 @@ import { Jobs } from '../contact-info';
 })
 export class CvContentComponent implements OnInit {
 
+  numbers: Number[] = [];
   jobs?: Jobs[];
+  schools?: Schools[];
+  languages?: Languages[];
 
-  constructor(private dataService: CvDataService) { }
+  constructor(private dataService: CvDataService) {
+    this.numbers = Array(10).fill(0).map((x, i) => i);
+  }
   setJobs(): void {
     this.dataService.getJobs().subscribe(data => this.jobs = data, error => console.log(error));
   }
 
-  ngOnInit() {
-    this.setJobs();
+  setSchools(): void {
+    this.dataService.getSchools().subscribe(data => this.schools = data, error => console.log(error));
   }
 
+  setLanguages(): void {
+    this.dataService.getLanguages().subscribe(data => this.languages = data, error => console.log(error));
+  }
+
+  isSpecial(number: number, progress: number): boolean {
+    return (number < progress);
+  }
+
+  ngOnInit() {
+    this.setJobs();
+    this.setSchools();
+    this.setLanguages();
+  }
 }
+
+
+

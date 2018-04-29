@@ -35,7 +35,7 @@ export class CvSidebarComponent implements OnInit {
   }
   ngOnInit() {
     this.getItems();
-    this.setAvatar();
+    // this.setAvatar();
   }
 
 }

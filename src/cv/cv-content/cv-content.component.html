@@ -13,18 +13,29 @@
     <hr>
     <h2>EDUCATION</h2>
     <hr>
+    <div *ngFor="let school of schools;" class="job-container">
+        <p class="job-timeframe" *ngIf="school.name">
+            {{school.timeframe}}
+        </p>
+        <p *ngIf="school.name">
+            {{school.name}}
+            <br> {{school.level}}
+        </p>
+    </div>
 </div>
 <br>
 <div id="exp">
     <hr>
     <h2>EXPERIENCE</h2>
     <hr>
-    <div class="flexbox-wrapper">
-        <div *ngFor="let job of jobs;">
-            <p>
-                WIP {{job.timeframe}} {{job.name}} {{job.functions}}
-            </p>
-        </div>
+    <div *ngFor="let job of jobs;" class="job-container">
+        <p class="job-timeframe" *ngIf="job.name">
+            {{job.timeframe}}
+        </p>
+        <p *ngIf="job.name">
+            {{job.name}}
+            <br> {{job.functions}}
+        </p>
     </div>
 </div>
 <br>
@@ -32,4 +43,12 @@
     <hr>
     <h2>LANGUAGE</h2>
     <hr>
+    <div class="language-flex">
+        <div *ngFor="let language of languages;" class="language-container">
+            <p>{{language.name}}</p>
+            <div class="progress-bar">
+                <div *ngFor="let number of numbers" class="progress-box" [class.progress-box-active]="isSpecial(number, language.progress)"></div>
+            </div>
+        </div>
+    </div>
 </div>

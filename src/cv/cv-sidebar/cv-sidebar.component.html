@@ -3,12 +3,15 @@
   <h2>profession</h2>
 </div>
 <div *ngIf="avatarUploaded; else elseBlock" class="profile-picture-box">
-  <img class=" profile-picture " [src]="url ">
+  <img class="profile-picture" [src]="url">
 </div>
-<ng-template #elseBlock>
-  <img id="placeholder " src="../../assets/profile-placeholder.jpg ">
+<ng-template #elseBlock class="profile-picture-box">
+  <img class="profile-picture" src="../../assets/profile-placeholder.jpg ">
 </ng-template>
 <div *ngFor="let item of items; " class="sidebar-items ">
-  <h3 *ngIf="item.content ">{{item.name}}</h3>
+  <div class="sidebar-items-icon">
+    <p *ngIf="item.content" class="material-icons">{{item.icon}}</p>
+    <h3 *ngIf="item.content">{{item.name}}</h3>
+  </div>
   <p *ngIf="item.content ">{{item.content}}</p>
 </div>

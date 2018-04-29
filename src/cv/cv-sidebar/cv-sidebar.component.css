@@ -5,6 +5,7 @@
     color: #382c2c;
     flex: 1.5;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .profile-picture-box {
@@ -23,4 +24,9 @@
 .sidebar-items {
     margin-top: 5px;
     margin-bottom: 5px;
+
+}
+
+.sidebar-items-icon {
+    display: flex;
 }
