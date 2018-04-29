@@ -7,6 +7,7 @@ import { CvPageComponent } from './cv-page/cv.page.component';
 import { CvSidebarComponent } from './cv-sidebar/cv-sidebar.component';
 import { CvContentComponent } from './cv-content/cv-content.component';
 import { CvDataService } from './cv-data.service';
+import { CvPersonalInfoComponent } from './cv-personal-info/cv.personal-info.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { CvDataService } from './cv-data.service';
     CvComponent,
     CvPageComponent,
     CvSidebarComponent,
-    CvContentComponent
+    CvContentComponent,
+    CvPersonalInfoComponent
   ],
   imports: [
     BrowserModule

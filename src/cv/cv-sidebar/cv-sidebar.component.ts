@@ -10,19 +10,12 @@ import { of } from 'rxjs/observable/of';
   styleUrls: ['./cv-sidebar.component.css']
 })
 
-
-
 export class CvSidebarComponent implements OnInit {
   // Temporary
   avatarUploaded = false;
-  items: ContactInfo[] = [];
   url?: string;
 
   constructor(private dataService: CvDataService) { }
-
-  getItems(): void {
-    this.items = this.dataService.items;
-  }
 
   setAvatar(): void {
     if (this.avatarUploaded === false) {
@@ -34,7 +27,6 @@ export class CvSidebarComponent implements OnInit {
     }
   }
   ngOnInit() {
-    this.getItems();
     // this.setAvatar();
   }
 

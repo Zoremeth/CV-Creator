@@ -1,0 +1,7 @@
+<div *ngFor="let item of items; " class="sidebar-items ">
+    <div class="sidebar-items-icon">
+        <p *ngIf="item.content" class="material-icons">{{item.icon}}</p>
+        <h3 *ngIf="item.content">{{item.name}}</h3>
+    </div>
+    <p *ngIf="item.content ">{{item.content}}</p>
+</div>
