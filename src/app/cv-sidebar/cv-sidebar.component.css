@@ -19,5 +19,19 @@
 }
 
 .introduction {
+    display: flex;
+    flex-flow: row wrap;
     text-transform: uppercase;
+}
+
+.test:hover {
+    border: 5px;
+    background-color: white;
+}
+
+.edit-button {
+    border: 5px;
+    height: 39px;
+    width: 40px;
+    background-color: white;
 }

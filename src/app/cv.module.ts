@@ -10,6 +10,8 @@ import { CvDataService } from './cv-data.service';
 import { CvPersonalInfoComponent } from './cv-personal-info/cv.personal-info.component';
 import { CvLanguageProgressbarComponent } from './cv-language-progressbar/cv-language-progressbar.component';
 import { CvHeadersComponent } from './cv-headers/cv-headers.component';
+import { FormsModule } from '@angular/forms';
+import { CvInlineEditorComponent } from './cv-inline-editor/cv-inline-editor.component';
 
 
 @NgModule({
@@ -21,9 +23,11 @@ import { CvHeadersComponent } from './cv-headers/cv-headers.component';
     CvPersonalInfoComponent,
     CvLanguageProgressbarComponent,
     CvHeadersComponent,
+    CvInlineEditorComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
   ],
   providers: [
     CvDataService,

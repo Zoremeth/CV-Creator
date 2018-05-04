@@ -1,11 +1,11 @@
 <div class="introduction">
-  <h1>name</h1>
+  <h1 class="test">name</h1>
   <h2>profession</h2>
 </div>
-<div *ngIf="avatarUploaded; else elseBlock" class="profile-picture-box">
-  <img class="profile-picture" [src]="url">
+<div *ngIf="avatarUploaded; else elseBlock " class="profile-picture-box ">
+  <img class="profile-picture " [src]="url ">
 </div>
-<ng-template #elseBlock class="profile-picture-box">
-  <img class="profile-picture" src="../../assets/profile-placeholder.jpg ">
+<ng-template #elseBlock class="profile-picture-box ">
+  <img class="profile-picture " src="../../assets/profile-placeholder.jpg ">
 </ng-template>
 <cv-personal-info></cv-personal-info>

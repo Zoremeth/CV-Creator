@@ -3,6 +3,13 @@ html {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 html, p, h1, h2, h3 {
